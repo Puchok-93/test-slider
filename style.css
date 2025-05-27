@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 50px;
+}
+
+.wrapper {
+  width: 1200px;
+  padding: 0 10px;;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.content {
+  width: 100% ;
+       max-width: 788px;
+    border-radius: 15px;
+    outline: 1px solid red;
+}
+
+.sidebar {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 500px;
+    border-radius: 15px;
+    outline: 1px solid red;
+}
+
+.slider-box {
+  max-width: 788px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    overflow: hidden;
+    gap: 20px;
+}
+
+
+.swiper-1,
+.swiper-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+}
+
+.square--red {
+  background: red;
+}
+
+.square--green {
+  background: green;
+}
+
+.swiper-1 {
+  max-width: 688px;
+}
+
+.swiper-1 .swiper-slide {
+  background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 688px;
+    height: 688px;
+    border-radius: 8px;
+}
+
+.swiper-2 {
+  flex-shrink: 0;
+    width: 80px;
+    height: 600px;
+    overflow: hidden;
+    padding: 40px 0;
+    margin:  0;
+}
+
+.swiper-2 .swiper-slide {
+      height: 80px !important;
+}
+
+.swiper-2 .swiper-button-prev {
+    top: 18px;
+    left: 24px;
+    transform: rotate(90deg);
+    padding: 10px;
+    background: white;
+}
+
+
+.swiper-2 .swiper-button-next {
+    top: auto;
+    bottom: 10px;
+    right: 24px;
+    transform: rotate(90deg);
+    padding: 10px;
+    background: white;
+}
